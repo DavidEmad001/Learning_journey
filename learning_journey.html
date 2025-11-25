@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Learning Journey | David Emad</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .entry {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .entry h3 {
+        margin: 0;
+        padding: 15px 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .entry-content {
+        padding: 0 20px;
+        /* display: none; مخفي في الأول */
+      }
+
+    .entry p {
+      margin: 8px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 30px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border: #444 2px solid;
+
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>My Learning Journey</h1>
+      <p>Tracking my daily progress as I build my AI & Data career from zero.</p>
+    </header>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <div class="entry">
+        <h3>📌 22 November 2025 — Starting from Zero</h3>
+        <p>I decided to reset my journey and start learning everything step-by-step. Beginning with Data Analysis as my first technical foundation.</p>
+      </div>
+
+      <div class="entry">
+        <h3>📘 First Step: Data Analysis Intro Lecture</h3>
+        <div class="entry-content">
+          <p>Started with an introductory lecture on Data Analysis by Ahmed Abu Ghaly: "Data Analysis From Scratch" — Course for Beginners from Zero.</p>
+          <p>I have learnt the jobs that related to <strong>Data Analyst</strong>:
+            <ol>
+              <li>Marketing Analyst</li>
+              <li>Sales Analyst</li>
+              <li>Product Analyst</li>
+              <li>HR Analyst</li>
+              <li>Financial Analyst</li>
+              <li>Business Analyst</li>
+            </ol>
+          </p>
+          <p>I also learnt the steps of <strong>Data Analysis</strong>:
+            <ol>
+              <li>Asking the right questions</li>
+              <li>Collecting Data</li>
+              <li>Data Cleaning</li>
+              <li>Data Analysis</li>
+              <li>Explaining the results</li>
+            </ol>
+          </p>
+          <p>The Salary of Data Analyst in Egypt, Saudi Arabia, Qatar and the other foreign countries</p>
+          <p><strong>Skills</strong>  for Data Analyst
+            <ol>
+              <li>Statistics</li>
+              <li>Analytical Thinking</li>
+              <li>Excel</li>
+              <li>SQL</li>
+              <li>Programming Language (Python - R .. etc.)</li>
+              <li>Visualization Tools (Power BI - Tableau - google studio ... etc.)</li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      
+      <div class="entry">
+        <h3>📌 Thursday 25 November 2025</h3>
+      </div>
+
+      <div class="entry">
+        <h3> Data Analysis Course for beginners: Lecture 02: Excel</h3>
+        <div class="entry-content">
+          <p>What's new for me:
+            <ol>
+              <li>Coloring sheet name
+                  <br>
+                  <img src="images/tab color.png" alt="tab color">
+              </li>
+              <li>Page Layout icon under the sheet: to show the printable area
+                  <br>
+                  <img src="images/printable area.png" alt="printable area">
+              </li>
+              <li>Page Break Preview [the icon in the right bottom corner]: To show the area that has data
+                  <br>
+                  <img src="images/data in page.png" alt="data in page">
+              </li>
+              <li>alt then [chars or nums]: If I want to use only the keyboard
+                  <br>
+                  <img src="images/alt and keys.png" alt="alt and keys">
+              </li>
+              <li>Create New Tab with any name => Customize the ribbon
+                  <br>
+                  <img src="images/new tab.jpg" alt="new tab">
+              </li>
+              <li>Rename the cell
+                  <br>
+                  <img src="images/rename a cell.png" alt="rename a cell">
+              </li>
+              <li>Add new list for auto complete
+                  <br>
+                  <img src="images/add new list 01.png" alt="add new list 01">
+                  <br>
+                  <img src="images/add new list.png" alt="add new list">
+              </li>
+            </ol>
+          </p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>🚀 Future Logs Will Be Added Automatically</h3>
+        <p>I will keep updating this page with every milestone—projects, skills, and new concepts I learn along the way.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2025 David Emad
+    </footer>
+
+  </div>
+
+  <script>
+    // نجيب كل العناوين
+    const headers = document.querySelectorAll('.entry h3');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        // toggle العرض / الاختفاء
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
