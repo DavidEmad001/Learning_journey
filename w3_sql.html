@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SQL | W3 School</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .entry {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .entry h3 {
+        margin: 0;
+        padding: 15px 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .entry-content {
+        padding: 0 20px;
+        /* display: none; To Hide */
+      }
+
+    .entry > p , .entry-content > p{
+      margin: 8px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 30px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border: #444 2px solid;
+    }
+
+    li {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    li div{
+      font-weight: normal;
+    }
+    .day{
+        background: #e6ffa8;
+        border: 1px solid #CCC;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .code {
+    font-family: Consolas, "Courier New", monospace; /* خط الكود */
+    background-color: #1e1e1e; /* نفس لون الخلفية في SSMS */
+    color: #d4d4d4; /* لون النص */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>W3 School | SQL</h1>
+      <p>Tracking my daily progress in the course from zero.</p>
+    </header>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Tuesday: 23 December 2025</h3>
+      </div>
+
+      <div class="entry">
+        <h3>SQL Intro</h3>
+        <div class="entry-content">
+            <ol>
+                <li>
+                    <p>What is SQL?</p>
+                </li>
+                <li>
+                    <p>What Can SQL do?</p>
+                </li>
+                <li>
+                    <p>SQL is a Standard - BUT....</p>
+                </li>
+                <li>
+                    <p>Using SQL in Your Web Site</p>
+                </li>
+                <li>
+                    <p>RDBMS: Relational Database Management System</p>
+                </li>
+            </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>SQL Syntax</h3>
+        <div class="entry-content">
+        <ol>
+            <li>
+                <p>SQL Statements</p>
+            </li>
+            <li>
+                <p>Database Tables</p>
+            </li>
+            <li>
+                <p>Semicolon after SQL Statements?</p>
+            </li>
+            <li>
+                <p>Some of The Most Important SQL Commands</p>
+            </li>
+        </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>SQL SELECT Statement</h3>
+        <div class="entry-content">
+            <ol>
+                <li>
+                    <p>The SQL SELECT Statement</p>
+                    <img src="images/W3 Schools/select syntax.png" alt="select syntax">
+                    <img src="images/W3 Schools/select.png" alt="select">
+                    <img src="images/W3 Schools/select 02.png" alt="select 02">
+                </li>
+                <li>
+                    <p>Select ALL columns</p>
+                    <p class="code">SELECT * FROM table_name;</p>
+                </li>
+            </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>SQL SELECT DISTINCT Statement</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>select distinct</p>
+              <img src="images/W3 Schools/select distict.png" alt="select distinct">
+            </li>
+            <li>
+              <p>Count Distinct</p>
+              <img src="images/W3 Schools/count distinct.png" alt="count distinct">
+              <img src="images/W3 Schools/count distinct output.png" alt="count distinct output">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>SQL WHERE Clause</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>The SQL WHERE Clause</p>
+              <img src="images/W3 Schools/where.png" alt="where">
+              <img src="images/W3 Schools/where 02.png" alt="where 02">
+            </li>
+            <li>
+              <p>Operators in The WHERE Clause</p>
+              <img src="images/W3 Schools/where operators.png" alt="where operators">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>SQL ORDER BY Keyword </h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>The SQL ORDER BY</p>
+              <img src="images/W3 Schools/order by 0.png" alt="order by 0">
+              <img src="images/W3 Schools/order by.png" alt="order by">
+              <img src="images/W3 Schools/order by 02.png" alt="order by 02">
+            </li>
+            <li>
+              <p>DESC</p>
+              <img src="images/W3 Schools/desc.png" alt="desc">
+              <img src="images/W3 Schools/desc 02.png" alt="desc 02">
+            </li>
+            <li>
+              <p>Order Alphabetically</p>
+              <img src="images/W3 Schools/alpha.png" alt="alpha">
+              <img src="images/W3 Schools/alpha 02.png" alt="alpha 02">
+            </li>
+            <li>
+              <p>ORDER BY Several Columns</p>
+              <img src="images/W3 Schools/multi order.png" alt="multi order">
+              <img src="images/W3 Schools/multi order 02.png" alt="multi order 02">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>🚀 Future Logs Will Be Added Automatically</h3>
+        <p>I will keep updating this page with every milestone—projects, skills, and new concepts I learn along the way.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2025 David Emad
+    </footer>
+
+  </div>
+
+  <script>
+    // نجيب كل العناوين
+    const headers = document.querySelectorAll('.entry h3');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        // toggle العرض / الاختفاء
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
