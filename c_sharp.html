@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>C# | Husseen Elganzory</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .entry {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .entry h3 {
+        margin: 0;
+        padding: 15px 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .entry-content {
+        padding: 0 20px;
+        /* display: none; To Hide */
+      }
+
+    .entry > p , .entry-content > p{
+      margin: 8px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 30px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border: #444 2px solid;
+    }
+
+    li {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    li div{
+      font-weight: normal;
+    }
+    .day{
+        background: #e6ffa8;
+        border: 1px solid #CCC;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .code {
+    font-family: Consolas, "Courier New", monospace; /* خط الكود */
+    background-color: #1e1e1e; /* نفس لون الخلفية في SSMS */
+    color: #d4d4d4; /* لون النص */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    }
+    
+    .line{
+        font-weight: lighter;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>C# | Husseen Elganzory</h1>
+      <p>Tracking my daily progress in the course from zero.</p>
+    </header>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Friday: 09 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>01 - Introduction to C#</h3>
+        <div class="entry-content">
+            <ol>
+                <li>
+                    <p>What is .net Framework?</p>
+                    <p class="line">It containts a lot of libraries and templates.</p>
+                    <p class="line">It does three main things: Build - Manage - Deploy.</p>
+                    <p class="line">CLR: Common Language Runtime</p>
+                    <img src="images/C sharp/01_Introduction/dot_net.png" alt="">
+                </li>
+                <li>
+                    <p>Templates</p>
+                    <img src="images/C sharp/01_Introduction/templates.png" alt="">
+                </li>
+                <li>
+                    <p>Solution <p class="line">It is a container for one or more projects</p></p>
+                    <img src="images/C sharp/01_Introduction/solution.png" alt="">
+                </li>
+            </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 10 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>01 - Introduction to C# [Cont.]</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>namespace</p>
+              <p class="line">It is a container of many classes.</p>
+            </li>
+            <li>
+              <p class="line">You must be Organized and problem solver.</p>
+            </li>
+            <li>
+              <p>Method</p>
+              <img src="images/C sharp/01_Introduction/methods.png" alt="">
+            </li>
+            <li>
+              <p>WriteLine</p>
+              <p class="line">WriteLine is a method in the Class Console <br> which is from the namespace system</p>
+              <img src="images/C sharp/01_Introduction/writeline.png" alt="">
+            </li>
+            <li>
+              <p>Console.ReadKey()</p>
+              <p class="line">To wait for any a key</p>
+              <img src="images/C sharp/01_Introduction/readkey.png" alt="">
+            </li>
+            <li>
+              <p>XAML</p>
+              <p class="line">XML: for data</p>
+              <p class="line">XAML: for design</p>
+              <img src="images/C sharp/01_Introduction/xaml.png" alt="">
+            </li>
+            <li>
+              <p>WPF App</p>
+              <img src="images/C sharp/01_Introduction/wpf.png" alt="">
+              <img src="images/C sharp/01_Introduction/wpf2.png" alt="">
+              <p>toolbox</p>
+              <img src="images/C sharp/01_Introduction/toolbox.png" alt="">
+              <p>label</p>
+              <img src="images/C sharp/01_Introduction/label.png" alt="">
+              <p>Run WPF</p>
+              <img src="images/C sharp/01_Introduction/run wpf.png" alt="">
+              <p>Label Properties</p>
+              <img src="images/C sharp/01_Introduction/label prop.png" alt="">
+              <p>My First WPF</p>
+              <img src="images/C sharp/01_Introduction/my first wpf.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Monday: 19 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>02 - Data Types and Casting</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Xml comment</p>
+              <img src="images/C sharp/02/xml comment.png" alt="">
+            </li>
+            <li>
+              <p>snippit: cw tab >> Console.WriteLine(  )</p>
+            </li>
+            <li>
+              <p>Formatting</p>
+              <img src="images/C sharp/02/formatting.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Tuesday: 20 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>02 - Data Types and Casting [Cont.]</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>var: if I don't know the return type of an expression.</p>
+              <p class="line">Don't use it as function return type.</p>
+              <p class="line">Don't use it as function parameters.</p>
+              <img src="images/C sharp/02/var.png" alt="">
+            </li>
+            <li>
+              <p>TryParse</p>
+              <p class="line">Use it to avoid incorrect entered data</p>
+              <img src="images/C sharp/02/tryparse.png" alt="">
+            </li>
+            <li>
+              <p>region</p>
+              <p class="line">To split the code into parts</p>
+              <img src="images/C sharp/03/region.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Friday: 23 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>03 - If Statement and Loops</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>04 - Array</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Array</p>
+              <img src="images/C sharp/04 - array/array.png" alt="">
+              <img src="images/C sharp/04 - array/array 02.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>05 - Method</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Method</p>
+              <img src="images/C sharp/05 - Methods/Screenshot_1.png" alt="">
+              <img src="images/C sharp/05 - Methods/print.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 24 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>06 – Overloaded Methods and output parameters</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Overload</p>
+              <img src="images/C sharp/06 - overload/overload.png" alt="">
+            </li>
+            <li>
+              <p>Optional Parameters</p>
+              <img src="images/C sharp/06 - overload/optional parameter.png" alt="">
+              <img src="images/C sharp/06 - overload/optional 2.png" alt="">
+            </li>
+            <li>
+              <p>Out Parameter</p>
+              <img src="images/C sharp/06 - overload/out argument.png" alt="">
+              <img src="images/C sharp/06 - overload/out 2.png" alt="">
+              <img src="images/C sharp/06 - overload/out.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 24 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>07 – Handling Exception</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>How to Know the Exceptions of a method:</p>
+              <img src="images/C sharp/07 - exceptions/exception.png" alt="">
+            </li>
+            <li>
+              <p>Try Catch</p>
+              <img src="images/C sharp/07 - exceptions/try catch.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Wednesday: 28 January 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>08 – Class and OOP</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Class</p>
+              <img src="images/C sharp/08 - Class/class.png" alt="">
+              <img src="images/C sharp/08 - Class/class 02.png" alt="">
+              <img src="images/C sharp/08 - Class/class 03.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>09 – Constructor</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Constructor</p>
+              <img src="images/C sharp/09 - Constructor/constructor.png" alt="">
+              <img src="images/C sharp/09 - Constructor/constructor 02.png" alt="">
+            </li>
+            <li>
+              <p>Object Initializer</p>
+              <img src="images/C sharp/09 - Constructor/class initializer.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>        
+
+      <div class="entry">
+        <h3>10 – Static Class and Extension Method</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <input type="submit">
+
+      <div class="entry">
+        <h3>🚀 Future Logs Will Be Added Automatically</h3>
+        <p>I will keep updating this page with every milestone—projects, skills, and new concepts I learn along the way.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 David Emad
+    </footer>
+
+  </div>
+
+  <script>
+    // نجيب كل العناوين
+    const headers = document.querySelectorAll('.entry h3');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        // toggle العرض / الاختفاء
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

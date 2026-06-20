@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>React Track</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .entry {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .entry h3 {
+        margin: 0;
+        padding: 15px 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .entry-content {
+        padding: 0 20px;
+        /* display: none; To Hide */
+      }
+
+    .entry > p , .entry-content > p{
+      margin: 8px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 30px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border: #444 2px solid;
+    }
+
+    li {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    li div{
+      font-weight: normal;
+    }
+    .day{
+        background: #e6ffa8;
+        border: 1px solid #CCC;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .code {
+    font-family: Consolas, "Courier New", monospace; /* خط الكود */
+    background-color: #1e1e1e;
+    color: #f1eded; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white !important;
+    }
+    
+    .line{
+        font-weight: lighter;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    }
+
+    .new{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: gold;
+      color: dodgerblue;
+      font-weight: bold;
+      border: 2px solid rgb(13, 84, 141);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .parent{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>React Track</h1>
+      <p>Tracking my daily progress in the course from zero.</p>
+    </header>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 20 June 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>HTML : Day1(1)</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>HTML : Text + Markup</p>
+              <p>Web app: url + internet</p>
+              <p>Web app is built in one place (web server)</p>
+              <img src="images/React/web app.png" alt="">
+              <img src="images/React/web pages.png" alt="">
+              <img src="images/React/ide.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      
+
+      <div class="entry">
+        <h3>🚀 Future Logs Will Be Added Automatically</h3>
+        <p>I will keep updating this page with every milestone—projects, skills, and new concepts I learn along the way.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 David Emad
+    </footer>
+
+  </div>
+
+  <script>
+    // نجيب كل العناوين
+    const headers = document.querySelectorAll('.entry h3');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        // toggle العرض / الاختفاء
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

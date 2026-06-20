@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WordPress</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      color: #111;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    header h1 {
+      font-size: 2.4rem;
+      margin-bottom: 10px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1rem;
+      color: #555;
+    }
+
+    section {
+      margin-bottom: 50px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      border-left: 4px solid #000;
+      padding-left: 10px;
+      margin-bottom: 20px;
+    }
+    .entry {
+        background: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+      }
+
+      .entry h3 {
+        margin: 0;
+        padding: 15px 20px;
+        background: #f0f0f0;
+        cursor: pointer;
+        user-select: none;
+      }
+
+      .entry-content {
+        padding: 0 20px;
+        /* display: none; To Hide */
+      }
+
+    .entry > p , .entry-content > p{
+      margin: 8px;
+      color: #444;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+      padding-bottom: 30px;
+    }
+    img{
+      display: block;
+      max-width: 100%;
+      margin: 10px auto;
+      border: #444 2px solid;
+    }
+
+    li {
+      font-weight: bold;
+      font-size: 20px;
+    }
+    li div{
+      font-weight: normal;
+    }
+    .day{
+        background: #e6ffa8;
+        border: 1px solid #CCC;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        overflow: hidden;
+    }
+
+    .code {
+    font-family: Consolas, "Courier New", monospace; /* خط الكود */
+    background-color: #1e1e1e;
+    color: #f1eded; 
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: white !important;
+    }
+    
+    .line{
+        font-weight: lighter;
+        font-family: monospace;
+        margin: 0;
+        padding: 0;
+    }
+
+    .new{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: gold;
+      color: dodgerblue;
+      font-weight: bold;
+      border: 2px solid rgb(13, 84, 141);
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+    }
+
+    .parent{
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <header>
+      <h1>WordPress</h1>
+      <p>Tracking my daily progress in the course from zero.</p>
+    </header>
+
+    <section>
+      <h2>Timeline</h2>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Monday: 16 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>Practice</h3>
+        <div class="entry-content">
+          <a href="E:\DAVID FILES\Directors\01 - Programming\2026\01 - Wordpress\Project 01\index.html" target="_blank">CSS Essentials</a>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 01 - Introduction and History</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 02 - Tags and Elements</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 03 - Headings</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+       <div class="day">
+        <h3>📌 Tuesday: 17 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 04 - Container vs non Container</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+      
+      <div class="entry">
+        <h3>HTML 5 : 05 - Attributes</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 06 - Images</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+      <!-- ################################################################ -->
+       <div class="day">
+        <h3>📌 Wednesday: 18 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 07 - Links</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 08 - Nesting</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 09 - Lists</h3>
+        <div class="entry-content">
+          <ol type="1" start="10">
+            <li>English Teacher</li>
+            <li>Programming Instructor</li>
+            <li>Programmer</li>
+            <li>Youtuber</li>
+          </ol>
+        </div>
+      </div>
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 21 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 10 - Tables</h3>
+        <div class="entry-content">
+          <table border="1">
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>City</th>
+            </tr>
+            <tr>
+              <td>David</td>
+              <td>27</td>
+              <td>Mallawi</td>
+            </tr>
+            <tr>
+              <td>Kero</td>
+              <td>27</td>
+              <td>Sohag</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 11 - Formatting</h3>
+        <div class="entry-content">
+          <b>bold</b>
+          <i>italic</i>
+          <u>underlined</u>
+          <sub>sub</sub>
+          <sup>sup</sup>
+          <mark>mark</mark>
+          <del>del</del>
+          <small>small</small>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 12 - Video</h3>
+        <div class="entry-content">
+          <video src="videos/video.mp4" controls width="400" loop muted autoplay></video>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 13 - Audio</h3>
+        <div class="entry-content">
+          <audio src="audio/christmas.mp3" controls autoplay loop></audio>
+        </div>
+      </div>
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Tuesday: 24 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 14 - iframe</h3>
+        <div class="entry-content">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d113048.56870240977!2d30.758004208007804!3d27.693571557088738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2seg!4v1774352474799!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 15 - Forms</h3>
+        <div class="entry-content">
+          <form>
+            <input type="email" placeholder="Enter your email"> <br>
+            <input type="password" placeholder="Enter your password">
+            <br>
+            <label>User Name:</label>
+            <input type="text"> <br>
+            <input type="file"> <br>
+            <textarea rows="5" cols="30"></textarea><br>
+            <select>
+              <option>Tea</option>
+              <option>Orange</option>
+              <option>Coffee</option>
+            </select>
+
+          </form>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>HTML 5 : 16 - HTML Structure</h3>
+        <div class="entry-content">
+
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Wednesday: 25 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 01 - Introduction to CSS</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 02 - History</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Thursday: 26 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 3 - Ways to Write CSS</h3>
+        <div class="entry-content">
+          <p>Inline - Internal - External</p>
+          <img src="images/WordPress/external.png" alt="">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 4 - Colors and background</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 5 - Text</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 6 - Fonts</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 28 March 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 7 - Google Fonts</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 8 - remix icons</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 9 - id vs class</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 10 - div vs span</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Wednesday: 1 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 11 - Pseudo Class</h3>
+        <div class="entry-content">
+          <p>:focus => for input elements</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 12 - Pseudo Elements</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Essentials : 13 - ٍSelectors</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 1 - Box Model</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 2 - Border</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 3 - Padding</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 4 - Margin</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 5- position ( static - absolute - relative ) and Practical</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Friday: 3 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 06 - Position ( Fixed ) and Practical</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 07 - position ( Sticky )</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 08 - z-index and Practical</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 09 -introduction+to+FlexBox</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Saturday: 4 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 10 -  container(display - direction - wrap - flow )</h3>
+        <div class="entry-content">
+          
+          <div class="parent">
+            <span class="new">New</span>
+            <p class="code">
+              flex-flow: flex-direction flex-wrap;
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="entry">
+        <h3>CSS Layout : 11   - Container ( justify - align items - align content - gap )</h3>
+        <div class="entry-content">
+          <div class="parent">
+            <span class="new">New</span>
+            <p class="code">
+              justify-content: space-evenly;
+            </p>
+          </div>
+          <img src="images/WordPress/space-evenly.png" alt="">
+          
+          <div class="parent">
+            <span class="new">New</span>
+            <p class="code">
+              align-items: stretch;            
+            </p>
+          </div>
+          <img src="images/WordPress/strech.png" alt="">
+
+        </div>
+      </div>
+
+      
+      <div class="entry">
+        <h3>CSS Layout : 12 - Items ( order - grow - shrink - basis - align self)</h3>
+        <div class="entry-content">
+          <p>flex-grow</p>
+          <img src="images/WordPress/flex-grow.png" alt="">
+
+          <p class="code">flex-shrink: 0;</p>
+          <img src="images/WordPress/flex-shrink.png" alt="">
+
+          <p class="code">align-self</p>
+          <img src="images/WordPress/align-self2.png" alt="">
+          <img src="images/WordPress/align-self.png" alt="">
+        </div>
+      </div>
+
+      
+      <div class="entry">
+        <h3>CSS Layout : 13 - introduction to Grid System</h3>
+        <div class="entry-content">
+          <p>Grid</p>
+          <img src="images/WordPress/grid.png" alt="">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 14 - display - columns - rows - gap</h3>
+        <div class="entry-content">
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>CSS Layout : 15 - grid column - grid row</h3>
+        <div class="entry-content">
+          <div class="parent">
+            <span class="new">New</span>
+            <p class="code">grid-column: 1/3;</p>
+          </div>
+          <img src="images/WordPress/grid-column.png" alt="">
+        </div>
+      </div>
+
+      
+      <div class="entry">
+        <h3>CSS Layout : 16 - grid template areas - grid area</h3>
+        <div class="entry-content">
+          <div class="parent">
+            <span class="new">New</span>
+            <p class="code">
+              <span style="color: orangered">.parent</span> <br> {<br>grid-template-areas:"header header header header" <br> } <br><br>
+              <span style="color: orangered">.child</span> {grid-area: header}
+            </p>
+            <br>
+
+          </div>
+          <img src="images/WordPress/grid-template-areas.png" alt="">
+        </div>
+      </div>
+      <!-- ################################################################ -->
+
+      <div class="day">
+        <h3>📌 Saturday: 6 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>ًWordPress : Session 02: Part 01</h3>
+        <div class="entry-content">
+          
+          <div class="parent">
+            <span class="new">New</span>
+            <p style="font-weight: bold;">Hosting & Domain</p>
+          </div>
+          <br>
+          <div style="display: flex; justify-content: center; align-items: center; gap: 20px;">
+            <img src="images/WordPress/hostinger.jpg" alt="" style="max-width: 200px; display: inline;">
+            <img src="images/WordPress/godady.png" alt="" style="max-width: 200px; display: inline;">
+          </div>
+        </div>
+      </div>
+      <!-- ################################################################ -->
+
+      <div class="day">
+        <h3>📌 Saturday: 7 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>ًWordPress : Session 02: Part 02 - 04</h3>
+        <div class="entry-content">
+          <p>How to Start Wordpress</p>
+          <ol>
+            <li>Download xampp: for database and localhost(server)</li>
+            <img src="images/WordPress/xampp.png" alt="">
+
+            <li>Download wordpress: from wordpress.org</li>
+            <img src="images/WordPress/wordpress.png" alt="">
+
+            <li>Create database: from xampp control panel</li>
+              <img src="images/WordPress/database1.png" alt="">
+              <img src="images/WordPress/database2.png" alt="">
+              <img src="images/WordPress/database3.png" alt="">
+            </li>
+
+            <li>
+              Install wordpress: by putting wordpress files in xampp/htdocs and then run the installation from localhost
+              <img src="images/WordPress/wordpress1.png" alt="">
+              <img src="images/WordPress/wordpress2.png" alt="">
+              <img src="images/WordPress/wordpress3.png" alt="">
+              <img src="images/WordPress/wordpress4.png" alt="">
+            </li>
+          </ol>
+          <p style="font-size: 50px;" class="code">!! Every Project need wordpress files from zero</p>
+        </div>
+      </div>
+
+      <div class="entry">
+        <h3>ًWordPress : Session 03: Part 01 - 04</h3>
+        <div class="entry-content">
+          <ol>
+            <li>Admin Bar</li>
+            <img src="images/WordPress/admin bar.png" alt="">
+
+            <li>side bar</li>
+            <img src="images/WordPress/side bar.png" alt="">
+
+            <li>Add Page Title</li>
+            <img src="images/WordPress/pages.png" alt="">
+
+            <li>Add Theme</li>
+            <img src="images/WordPress/theme.png" alt="">
+
+            <li>Customize the theme</li>
+            <img src="images/WordPress/customize.png" alt="">
+          </ol>
+        </div>
+      </div>
+
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Thursday: 9 April 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>WordPress: Session 04: Part 01 - 03</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Add Plugin</p>
+              <img src="images/WordPress/Plugin.png" alt="">
+            </li>
+            <li>
+              <p>Add User</p>
+              <img src="images/WordPress/users.png" alt="">
+            </li>
+            <li>
+              <p>Slug and page problem [Not Found]</p>
+              <img src="images/WordPress/slug.png" alt="">
+            </li>
+            <li>
+              <p>Change the currency of a product</p>
+              <img src="images/WordPress/currency.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Wednesday: (22 April - 1 May) 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>WordPress: Session 05: Part 01 - 03</h3>
+        <div class="entry-content">
+          <ol>
+            <li>
+              <p>Customize the CSS style without pro!!!</p>
+              <img src="images/WordPress/customize_css.png" alt="">
+              <img src="images/WordPress/customize_css 02.png" alt="">
+              <img src="images/WordPress/important.png" alt="">
+              <img src="images/WordPress/elementor.png" alt="">
+              <img src="images/WordPress/customize_css 03.png" alt="">
+              <img src="images/WordPress/customize_css 04.png" alt="">
+            </li>
+
+            <li>
+              <p>Add New Form and Customize it without pro!!!</p>
+              <img src="images/WordPress/add form.png" alt="">
+              <img src="images/WordPress/add form 02.png" alt="">
+              <p>Customize your form</p>
+              <img src="images/WordPress/add form 03.png" alt="">
+              <img src="images/WordPress/add form 04.png" alt="">
+              <p>Add the form using elementor</p>
+              <img src="images/WordPress/add form 05.png" alt="">
+              <img src="images/WordPress/add form 07.png" alt="">
+            </li>
+
+            <li>
+              <p>Add Location</p>
+              <img src="images/WordPress/add location.png" alt="">
+            </li>
+
+            <li>
+              <p>Customize the Nav Bar</p>
+              <img src="images/WordPress/navbar.png" alt="">
+              <img src="images/WordPress/navbar 02.png" alt="">
+            </li>
+
+            <li>
+              <p>Payment</p>
+              <img src="images/WordPress/payment.png" alt="">
+              <img src="images/WordPress/payment 02.png" alt="">
+            </li>
+
+            <li>
+              <p>Copoun</p>
+              <img src="images/WordPress/copoun.png" alt="">
+            </li>
+
+            <li>
+              <p>Taxes</p>
+              <img src="images/WordPress/taxes.png" alt="">
+              <img src="images/WordPress/taxes 02.png" alt="">
+            </li>
+
+            <li>
+              <p>Shipping</p>
+              <img src="images/WordPress/shipping.png" alt="">
+              <img src="images/WordPress/accounts and privacy.png" alt="">
+            </li>
+
+            <li>
+              <p>order check</p>
+              <img src="images/WordPress/order check.png" alt="">
+            </li>
+          </ol>
+        </div>
+      </div>
+      
+<!-- ################################################################ -->
+      <div class="day">
+        <h3>📌 Tuesday: (09 June) 2026</h3>
+      </div>
+
+      <div class="entry">
+        <h3>WordPress: Session 06: Part 01 - 04</h3>
+        <div class="entry-content">
+          <ol>
+            <li>The importance of GitHub</li>
+            <li>@media</li>
+            
+
+          </ol>
+        </div>
+      </div>
+      
+
+
+      <div class="entry">
+        <h3>🚀 Future Logs Will Be Added Automatically</h3>
+        <p>I will keep updating this page with every milestone—projects, skills, and new concepts I learn along the way.</p>
+      </div>
+
+    </section>
+
+    <footer>
+      © 2026 David Emad
+    </footer>
+
+  </div>
+
+  <script>
+    // نجيب كل العناوين
+    const headers = document.querySelectorAll('.entry h3');
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        const content = header.nextElementSibling;
+        // toggle العرض / الاختفاء
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
